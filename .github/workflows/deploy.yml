@@ -20,16 +20,13 @@ jobs:
     steps:
       # Название шага
       - name: Checkout code
-      - uses: actions/checkout@v2
-
+        uses: actions/checkout@v2
 
       # Отправка на сервер по ssh
       - name: Deploy to server
-      - uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.BEGET_HOST }}
           username: ${{ secrets.BEGET_USER }}
           key: ${{ secrets.BEGET_PRIVATE_KEY }}
           scripts: cd /home/t/tataril4/tataril4.beget.tech/public_html && git pull origin main
-
-          
