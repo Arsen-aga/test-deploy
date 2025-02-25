@@ -30,8 +30,6 @@ jobs:
           host: ${{ secrets.BEGET_HOST }}
           username: ${{ secrets.BEGET_USER }}
           key: ${{ secrets.BEGET_PRIVATE_KEY }}
-          scripts: | 
-            cd /home/t/tataril4/tataril4.beget.tech/public_html 
-            git pull origin main
+          scripts: cd /home/t/tataril4/tataril4.beget.tech/public_html && git pull origin main
 
           
