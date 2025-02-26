@@ -12,7 +12,7 @@ define("TG_USER_ID", "1137815032");
 
 $getQuery = array(
   'chat_id' => TG_USER_ID,
-  'text' => 'Сообщение с сервера',
+  'text' => 'Сообщение с сервера от Алима',
   'parse_mode' => 'html',
 );
 
